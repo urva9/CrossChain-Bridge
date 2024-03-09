@@ -4,6 +4,8 @@
 
 This Cross-Chain Bridge facilitates the seamless transfer of assets between Ethereum and Arbitrum blockchains. The bridge is built using Truffle, Node.js, Ethereum, Arbitrum, and Solidity.
 
+https://github.com/urva9/CrossChain-Bridge/assets/159683192/d3aae586-a746-4450-b873-3ac6864eaf1b
+
 ## Technologies Used
 
 - **Truffle**: A development framework for Ethereum that makes it easy to write, compile, and deploy smart contracts.
