@@ -1,0 +1,39 @@
+{
+  "name": "@openzeppelin/contracts",
+  "description": "Secure Smart Contract library for Solidity",
+  "version": "5.0.1",
+  "files": [
+    "**/*.sol",
+    "/build/contracts/*.json",
+    "!/mocks/**/*"
+  ],
+  "scripts": {
+    "prepack": "bash ../scripts/prepack.sh",
+    "prepare-docs": "cd ..; npm run prepare-docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenZeppelin/openzeppelin-contracts.git"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "smart",
+    "contracts",
+    "security",
+    "zeppelin"
+  ],
+  "author": "OpenZeppelin Community <maintainers@openzeppelin.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OpenZeppelin/openzeppelin-contracts/issues"
+  },
+  "homepage": "https://openzeppelin.com/contracts/",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.1.15"
+  },
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  }
+}
