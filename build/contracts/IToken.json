@@ -47,7 +47,7 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\n\ninterface IToken {\n  function mint(address to, uint amount) external;\n  function burn(address owner, uint amount) external;\n}",
-  "sourcePath": "/Users/urvaprajapati/Documents/untitled folder/contracts/IToken.sol",
+  "sourcePath": "/Users/urvaprajapati/Documents/cross-bridge/contracts/IToken.sol",
   "ast": {
     "absolutePath": "project:/contracts/IToken.sol",
     "exportedSymbols": {
@@ -266,7 +266,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-03-02T11:31:52.695Z",
+  "updatedAt": "2024-03-09T14:36:09.745Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

@@ -4,30 +4,30 @@ const mnemonic = 'matter venture maze there museum frown holiday teach skull cou
 module.exports = {
   networks: {
     ethTestnet: {
+      networkCheckTimeout: 100000,
       provider: () => new HDWalletProvider(
         mnemonic, 
-        'https://rinkeby.infura.io/v3/3607152dc14446e6bb0351c2892941cc', // Infura Rinkeby URL
+        'https://sepolia.infura.io/v3/3607152dc14446e6bb0351c2892941cc', // Infura Rinkeby URL
         0,
         1
       ),
-      network_id: '4', // Ensure network_id is a string
-      skipDryRun: true
+
+      
+      network_id: '11155111',
+      skipDryRun:true,
+      
+
     },
     bscTestnet: {
+      networkCheckTimeout: 100000,
       provider: () => new HDWalletProvider(
         mnemonic, 
-        'https://data-seed-prebsc-1-s1.binance.org:8545'
+        'https://arbitrum-sepolia.infura.io/v3/3607152dc14446e6bb0351c2892941cc'
       ),
-      network_id: '97',
+      network_id: '421614',
       skipDryRun: true
     },
-    development: {
-      host: "127.0.0.1",
-      port: 8545,
-      network_id: "*",
-      gas: 8000000, 
-    },
-   
+    
   },
   mocha: {},
   compilers: {

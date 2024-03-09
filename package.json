@@ -30,7 +30,9 @@
   },
   "homepage": "https://openzeppelin.com/contracts/",
   "dependencies": {
-    "@truffle/hdwallet-provider": "^2.1.15"
+    "@openzeppelin/contracts": "^5.0.2",
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "truffle": "^5.11.5"
   },
   "main": "truffle-config.js",
   "directories": {
