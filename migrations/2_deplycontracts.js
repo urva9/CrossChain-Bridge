@@ -1,7 +1,8 @@
+
 const TokenEth = artifacts.require('TokenEth.sol');
-const TokenBsc = artifacts.require('TokenBsc.sol');
+const TokenARB = artifacts.require('TokenARB.sol');
 const BridgeEth = artifacts.require('BridgeEth.sol');
-const BridgeBsc = artifacts.require('BridgeBsc.sol');
+const BridgeARB = artifacts.require('BridgeARB.sol');
 
 module.exports = async function (deployer, network, addresses) {
   if(network === 'ethTestnet') {
@@ -12,11 +13,11 @@ module.exports = async function (deployer, network, addresses) {
     const bridgeEth = await BridgeEth.deployed();
     await tokenEth.updateAdmin(bridgeEth.address);
   }
-  if(network === 'bscTestnet') {
-    await deployer.deploy(TokenBsc);
-    const tokenBsc = await TokenBsc.deployed();
-    await deployer.deploy(BridgeBsc, tokenBsc.address);
-    const bridgeBsc = await BridgeBsc.deployed();
-    await tokenBsc.updateAdmin(bridgeBsc.address);
+  if(network === 'ARBTestnet') {
+    await deployer.deploy(TokenARB);
+    const tokenARB = await TokenARB.deployed();
+    await deployer.deploy(BridgeARB, tokenARB.address);
+    const bridgeARB = await BridgeARB.deployed();
+    await tokenARB.updateAdmin(bridgeARB.address);
   }
 };

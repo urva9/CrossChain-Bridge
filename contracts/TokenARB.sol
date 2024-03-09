@@ -3,6 +3,6 @@ pragma solidity ^0.8.20;
 
 import './TokenBase.sol';
 
-contract TokenBsc is TokenBase {
-  constructor() TokenBase('BSC Token', 'BTK') {}
+contract TokenARB is TokenBase {
+  constructor() TokenBase('ARB Token', 'BTK') {}
 }

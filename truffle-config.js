@@ -18,7 +18,7 @@ module.exports = {
       
 
     },
-    bscTestnet: {
+    ARBTestnet: {
       networkCheckTimeout: 100000,
       provider: () => new HDWalletProvider(
         mnemonic, 
